@@ -1,0 +1,114 @@
+[
+  {
+    "id": {
+      "scope": "bit.envs",
+      "name": "compilers/react"
+    },
+    "isSymlink": false,
+    "hash": "acfc8a808ec3ad8abacd313c9c8b456c1fd7b0b3"
+  },
+  {
+    "id": {
+      "scope": "bit.envs",
+      "name": "internal/get-babel-options"
+    },
+    "isSymlink": false,
+    "hash": "d4771e232e52a7a9ef391bf363d523bc932b014d"
+  },
+  {
+    "id": {
+      "scope": "bit.envs",
+      "name": "internal/babel-base-compiler"
+    },
+    "isSymlink": false,
+    "hash": "98f497a5e1cba818d2d5da02020ed566a572b936"
+  },
+  {
+    "id": {
+      "scope": "bit.envs",
+      "name": "common/compiler-types"
+    },
+    "isSymlink": false,
+    "hash": "9c86fadf101414c730daf20f3b3c0b3adcd84e79"
+  },
+  {
+    "id": {
+      "scope": "bit.envs",
+      "name": "common/create-workspace"
+    },
+    "isSymlink": false,
+    "hash": "6b4cdb50159308c72de7a4291fc551540ba4a390"
+  },
+  {
+    "id": {
+      "scope": "bit.envs",
+      "name": "common/get-capsule-name"
+    },
+    "isSymlink": false,
+    "hash": "26aefd5aeef44fe4baf09eb442719418744f2d7d"
+  },
+  {
+    "id": {
+      "scope": "bit.envs",
+      "name": "common/build-component"
+    },
+    "isSymlink": false,
+    "hash": "4046cf768d7527702d0d1393e876cf12efe18835"
+  },
+  {
+    "id": {
+      "scope": "bit.utils",
+      "name": "object/has-own-property"
+    },
+    "isSymlink": false,
+    "hash": "68b489f0ac79f13787c77dc1fd6a7beb18a7b6ba"
+  },
+  {
+    "id": {
+      "scope": "bit.utils",
+      "name": "object/group-by"
+    },
+    "isSymlink": false,
+    "hash": "9155f60c15a0d4c1c0301f15ef2a09a99687ca77"
+  },
+  {
+    "id": {
+      "scope": "bit.envs",
+      "name": "testers/jest"
+    },
+    "isSymlink": false,
+    "hash": "864f28616b37b2b1452567111cc6e2ccaefd6572"
+  },
+  {
+    "id": {
+      "scope": "bit.utils",
+      "name": "file/extract-file-name-from-path"
+    },
+    "isSymlink": false,
+    "hash": "40b6505e0d7e94e891622864a08c778d10937456"
+  },
+  {
+    "id": {
+      "scope": "bit.utils",
+      "name": "validation/empty"
+    },
+    "isSymlink": false,
+    "hash": "f3eaf6905e683e3a07caa88471fa4fd5637fde13"
+  },
+  {
+    "id": {
+      "scope": null,
+      "name": "mock/input-text"
+    },
+    "isSymlink": true,
+    "hash": "b49a000b5f853157bf2c6ecef42697264291da8f"
+  },
+  {
+    "id": {
+      "scope": "viade_en1b.viade_en1b-app",
+      "name": "mock/input-text"
+    },
+    "isSymlink": false,
+    "hash": "1b0d099efa9a5b9dc23912a1e7fae055997bf395"
+  }
+]
