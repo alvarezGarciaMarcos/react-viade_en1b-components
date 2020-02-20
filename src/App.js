@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
 import MyNavBar from "./components/Layout/NavBar/NavBar";
-import MyMap from './components/Dashboard/MyMap/MyMap'
 import MyProfile from "./components/user/profile/MyProfile";
 
 

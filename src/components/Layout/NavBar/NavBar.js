@@ -1,14 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import { BsPerson } from "react-icons/bs";
-
 import {
   Navbar,
-  NavDropdown,
-  FormControl,
-  Button,
   Nav,
-  Form
 } from "react-bootstrap";
 
 const MyNavBar = props => {
