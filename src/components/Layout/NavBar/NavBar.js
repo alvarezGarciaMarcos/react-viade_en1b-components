@@ -6,9 +6,6 @@ import {
 } from "react-bootstrap";
 
 const MyNavBar = props => {
-  const [navState, setNavState] = useState({
-    loggedIn: false
-  });
   return (
     <Navbar className="bg-light" fixed="top" bg="light" expand="lg">
       <Navbar.Brand href="dashboard">{props.brandName}</Navbar.Brand>
