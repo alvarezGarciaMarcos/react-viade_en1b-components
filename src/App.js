@@ -7,7 +7,7 @@ import MyProfile from "./components/user/profile/MyProfile";
 
 class App extends Component {
   state = {
-    userLoggedIn: false
+    userLoggedIn: true
   }
   render() {
     const navBar = this.state.userLoggedIn 
