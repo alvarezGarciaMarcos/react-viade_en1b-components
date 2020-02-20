@@ -1,6 +1,7 @@
 language: node_js
 node_js:
 - 12.16.0
+
 warnings_are_errors: false
 
 cache:
