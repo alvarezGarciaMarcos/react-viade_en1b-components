@@ -11,6 +11,7 @@ install:
   - npm install
 script:
   - npm test
+<<<<<<< HEAD
 
 deploy:
   provider: pages
@@ -19,3 +20,5 @@ deploy:
   local_dir: build
   on:
     branch: master
+=======
+>>>>>>> 7b337a3a9a45b9812a1c7101be0db11939f345cd
