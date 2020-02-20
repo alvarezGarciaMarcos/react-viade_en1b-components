@@ -10,4 +10,4 @@ cache:
 install:
   - npm install
 script:
-  - jest
+  - npm test
