@@ -1,0 +1,11 @@
+.icon{
+    font-size: 2em;
+    margin: .2em;
+    
+}
+
+#basic-nav-dropdown{
+    display:block !important;
+    opacity:0;
+    pointer-events:none;  
+}
