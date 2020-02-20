@@ -4,11 +4,12 @@ import "./App.css";
 import MyNavBar from "./components/Layout/NavBar/NavBar";
 import MyMap from './components/Dashboard/MyMap/MyMap'
 import MyProfile from "./components/user/profile/MyProfile";
+import Dashboard from "./components/Dashboard/Dashboard";
 
 
 class App extends Component {
   state = {
-    userLoggedIn: false
+    userLoggedIn: true
   }
   render() {
     const navBar = this.state.userLoggedIn 
@@ -21,7 +22,8 @@ class App extends Component {
           {navBar}
           <Switch>
             <Route exact path="/"></Route>
-            <Route exact path="/profile" component={MyProfile}></Route>
+            <Route exact path="/dashboard" component={Dashboard}></Route>
+            <Route path="/profile" component={MyProfile}></Route>
           </Switch>
         </div>
       </BrowserRouter>

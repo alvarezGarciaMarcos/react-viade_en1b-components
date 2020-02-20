@@ -22,7 +22,7 @@ const MyNavBar = props => {
       <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
         <Nav className="justify-content-end" activeKey="/home">
           <Nav.Item>
-            <Nav.Link href="/routes">My routes</Nav.Link>
+            <Nav.Link href="routes">My routes</Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link href="routes/upload">Upload route</Nav.Link>
