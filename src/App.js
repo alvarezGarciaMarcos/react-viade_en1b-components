@@ -3,7 +3,12 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
 import MyNavBar from "./components/Layout/NavBar/NavBar";
 import MyProfile from "./components/user/profile/MyProfile";
+import Login from "./components/Layout/login/Login";
 
+const handleSubmit = event => {
+  event.preventDefault();
+  console.log(event.target)
+}
 
 class App extends Component {
   state = {
@@ -19,8 +24,9 @@ class App extends Component {
         <div className="App">
           {navBar}
           <Switch>
-            <Route exact path="/"></Route>
-            <Route exact path="/profile" component={MyProfile}></Route>
+            <Route exact path="/" render={(props) => <Login {...props} onSubmit={handleSubmit} />} ></Route>
+            <Route path="/profile" component={MyProfile}></Route>
+            
           </Switch>
         </div>
       </BrowserRouter>
