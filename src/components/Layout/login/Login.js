@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Button, Jumbotron } from "react-bootstrap";
+import { Form, Button} from "react-bootstrap";
 import "./Login.css";
 
 export default function Login(props) {
