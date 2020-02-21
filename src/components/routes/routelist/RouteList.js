@@ -1,6 +1,5 @@
 import React from "react";
 import RouteSummary from "./../routesummary/RouteSummary";
-import { ListGroup, ListGroupItem } from "react-bootstrap";
 import ReactScrollableList from "react-scrollable-list";
 
 export default function RouteList({ routes }) {
