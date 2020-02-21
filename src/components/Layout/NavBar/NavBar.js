@@ -1,20 +1,11 @@
 import React from "react";
-import { useState } from "react";
-import { BsPerson } from "react-icons/bs";
 
 import {
   Navbar,
-  NavDropdown,
-  FormControl,
-  Button,
-  Nav,
-  Form
+  Nav
 } from "react-bootstrap";
 
 const MyNavBar = props => {
-  const [navState, setNavState] = useState({
-    loggedIn: false
-  });
   return (
     <Navbar className="bg-light" fixed="top" bg="light" expand="lg">
       <Navbar.Brand href="dashboard">{props.brandName}</Navbar.Brand>

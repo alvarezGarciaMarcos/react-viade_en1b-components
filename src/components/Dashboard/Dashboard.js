@@ -1,17 +1,15 @@
 import React from 'react'
 import MyMap from './MyMap/MyMap'
+import './Dashboard.css'
+import { Row, Col } from 'react-bootstrap'
 
 export default function Dashboard() {
     return (
         <div className="dashboard container">
-            <div className="row">
-                <div className="col s12 m6">
-                    
-                </div>
-                <div className="col s12 m5 offset-m1">
-                    <MyMap></MyMap>
-                </div>
-            </div>
+            <Row>
+                <Col sm={4}></Col>
+                <Col sm={8}><MyMap/></Col>
+            </Row>
         </div>
     )
 }
