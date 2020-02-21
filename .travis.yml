@@ -15,7 +15,6 @@ script:
   - npm test
   - npm run build
 
-
 deploy:
   provider: pages
   skip-cleanup: true
