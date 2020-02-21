@@ -8,24 +8,28 @@ import Dashboard from "./components/Dashboard/Dashboard";
 
 const handleSubmit = event => {
   event.preventDefault();
-  console.log(event.target)
-}
+  console.log(event.target);
+};
 
 class App extends Component {
   state = {
     userLoggedIn: true
-  }
+  };
   render() {
-    const navBar = this.state.userLoggedIn 
-        ? <MyNavBar brandName="Viade_en1b"></MyNavBar>
-        : null 
-    
+    const navBar = this.state.userLoggedIn ? (
+      <MyNavBar brandName="Viade_en1b"></MyNavBar>
+    ) : null;
+
     return (
       <BrowserRouter>
         <div className="App">
           {navBar}
           <Switch>
-            <Route exact path="/" render={(props) => <Login {...props} onSubmit={handleSubmit} />} ></Route>
+            <Route
+              exact
+              path="/"
+              render={props => <Login {...props} onSubmit={handleSubmit} />}
+            ></Route>
             <Route path="/profile" component={MyProfile}></Route>
             <Route exact path="/dashboard" component={Dashboard}></Route>
           </Switch>
