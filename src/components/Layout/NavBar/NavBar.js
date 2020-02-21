@@ -14,14 +14,14 @@ const MyNavBar = props => {
             <BsMap className="icon"></BsMap>
             My routes
           </Nav.Link>
-          <Nav.Link href="routes/upload">
+          <Nav.Link href="/routes/upload">
             <BsArrowBarUp className="icon"></BsArrowBarUp>
             Upload route
           </Nav.Link>
           <NavDropdown variant="secondary" drop="left" title={<BsPerson className="icon"></BsPerson>}>
-        <NavDropdown.Item href="profile">My Profile</NavDropdown.Item>
+        <NavDropdown.Item href="/profile">My Profile</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="logout">Log Out</NavDropdown.Item>
+        <NavDropdown.Item href="/logout">Log Out</NavDropdown.Item>
       </NavDropdown>
         </Nav>
       </Navbar.Collapse>
