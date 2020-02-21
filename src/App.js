@@ -4,6 +4,7 @@ import "./App.css";
 import MyNavBar from "./components/Layout/NavBar/NavBar";
 import MyProfile from "./components/user/profile/MyProfile";
 import Login from "./components/Layout/login/Login";
+import Dashboard from "./components/Dashboard/Dashboard";
 
 const handleSubmit = event => {
   event.preventDefault();
@@ -26,7 +27,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" render={(props) => <Login {...props} onSubmit={handleSubmit} />} ></Route>
             <Route path="/profile" component={MyProfile}></Route>
-            
+            <Route exact path="/dashboard" component={Dashboard}></Route>
           </Switch>
         </div>
       </BrowserRouter>
