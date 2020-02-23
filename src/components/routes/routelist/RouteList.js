@@ -2,18 +2,14 @@ import React from "react";
 import RouteSummary from "./../routesummary/RouteSummary";
 import ReactScrollableList from "react-scrollable-list";
 
-export default function RouteList({ routes }) {
+export default function RouteList({ routes, onClick }) {
+   
   const summaries = routes.map(route => {
-    return {
-      id: route.id,
-      content: <RouteSummary route={route}></RouteSummary>
-    };
+    return (
+      <RouteSummary onClickHandle={onClick} route={route}></RouteSummary>
+    )
   });
   return (
-    <ReactScrollableList
-      listItems={summaries}
-      heightOfItem={25}
-      maxItemsToRender={5}
-    />
+    summaries
   );
 }
