@@ -6,7 +6,7 @@ export default function RouteList({ routes }) {
   const summaries = routes.map(route => {
     return {
       id: route.id,
-      content: <RouteSummary route={route}></RouteSummary>
+      content: <RouteSummary route={route} key={route.id}></RouteSummary>
     };
   });
   return (

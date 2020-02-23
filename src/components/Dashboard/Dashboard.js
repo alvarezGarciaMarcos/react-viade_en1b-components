@@ -3,17 +3,11 @@ import MyMap from './MyMap/MyMap'
 import './Dashboard.css'
 import { Row, Col } from 'react-bootstrap'
 import RouteList from '../routes/routelist/RouteList';
+import {connect} from 'react-redux'
 
-export default function Dashboard(props) {
-    const routes = [
-        {id:0, name: "Prueba1", author:"César"},
-        {id:1,name: "Prueba1", author:"César"},
-        {id:2,name: "Prueba1", author:"César"},
-        {id:3,name: "Prueba1", author:"César"},
-        {id:4,name: "Prueba1", author:"César"},
-        {id:5,name: "Prueba1", author:"César"},
-        {id:6,name: "Prueba1", author:"César"}
-    ]
+function Dashboard(props) {
+    //console.log(props)
+    const {routes} = props
     return (
         <div className="dashboard container">
             <Row>
@@ -23,3 +17,11 @@ export default function Dashboard(props) {
         </div>
     )
 }
+
+const mapStateToProps = (state) =>{
+    return {
+        routes : state.route.routes
+    }
+}
+
+export default connect(mapStateToProps)(Dashboard)
