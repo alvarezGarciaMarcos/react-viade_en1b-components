@@ -6,10 +6,7 @@ import MyProfile from "./components/user/profile/MyProfile";
 import Login from "./components/Layout/login/Login";
 import Dashboard from "./components/Dashboard/Dashboard";
 
-const handleSubmit = event => {
-  event.preventDefault();
-  console.log(event.target);
-};
+
 
 class App extends Component {
   state = {
@@ -28,7 +25,7 @@ class App extends Component {
             <Route
               exact
               path="/"
-              render={props => <Login {...props} onSubmit={handleSubmit} />}
+              render={props => <Login {...props} />}
             ></Route>
             <Route path="/profile" component={MyProfile}></Route>
             <Route exact path="/dashboard" component={Dashboard}></Route>
