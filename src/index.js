@@ -5,7 +5,7 @@ import './index.css';
 import { ThemeContext, themes } from './components/Layout/ThemeContext/ThemeContext'
 
 ReactDOM.render(
-  <ThemeContext.Provider value={themes.purple}>
+  <ThemeContext.Provider value={themes.lightOrange}>
     <App />
   </ThemeContext.Provider>
   ,

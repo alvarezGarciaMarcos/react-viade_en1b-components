@@ -4,7 +4,7 @@ import './MyMap.css'
 
 const MyMap = () => {
     return (
-        <div className="leaflet-container">
+        <div id="mapContainer" className="leaflet-container">
             <Map center={[43.3605977, -5.8448989]} zoom={15}>
             <TileLayer
           attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'

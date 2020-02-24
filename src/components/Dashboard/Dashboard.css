@@ -2,16 +2,38 @@
     height: 100vh;
     width: 100vw;
     padding-top: 7em;
+    max-height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 15% auto;
+    
 }
 
 #titleHolder{
-    min-height: 6em;
+    /*min-height: 6em;*/
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+    
 }
 
-.row {
-    max-height: 100%;
+h1{
+    font-size: 1.5em;
 }
 
 p{
     font-style: italic;
+}
+
+@media (max-width: 800px){
+    .dashboard {
+        padding-top: 5em;
+        max-height: 100vh;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 15% 50% auto;
+    }
+
+    #titleHolder{
+        max-height: 40%;
+    }
 }
