@@ -3,19 +3,19 @@ import MyMap from './MyMap/MyMap'
 import './Dashboard.css'
 import { Row, Col } from 'react-bootstrap'
 import RouteList from '../routes/routelist/RouteList';
+import {connect} from 'react-redux'
 
-export default function Dashboard(props) {
-    const routes = [
-        {id:0, name: "Prueba1", author:"César"},
-        {id:1,name: "Prueba1", author:"César"},
-        {id:2,name: "Prueba1", author:"César"},
-        {id:3,name: "Prueba1", author:"César"},
-        {id:4,name: "Prueba1", author:"César"},
-        {id:5,name: "Prueba1", author:"César"},
-        {id:6,name: "Prueba1", author:"César"}
-    ]
+function Dashboard(props) {
+    const {routes} = props
+    const {selectedRoute} = props
+    console.log(selectedRoute)
+    const currentSelectedMap = selectedRoute == null ? <div id='titleHolder'><h1>Routes List</h1></div> : (<div id='titleHolder'>
+    <h1>{selectedRoute.name}</h1> <p> by {selectedRoute.author}</p>
+</div>)
+
     return (
         <div className="dashboard container">
+            {currentSelectedMap}
             <Row>
                 <Col sm={4}><RouteList routes={routes} /></Col>
                 <Col sm={8}><MyMap/></Col>
@@ -23,3 +23,12 @@ export default function Dashboard(props) {
         </div>
     )
 }
+
+const mapStateToProps = (state) =>{
+    return {
+        routes : state.route.routes,
+        selectedRoute : state.route.selectedRoute
+    }
+}
+
+export default connect(mapStateToProps)(Dashboard)
