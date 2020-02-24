@@ -1,7 +1,6 @@
 import React from 'react'
 import MyMap from './MyMap/MyMap'
 import './Dashboard.css'
-import { Row, Col } from 'react-bootstrap'
 import RouteList from '../routes/routelist/RouteList';
 import {connect} from 'react-redux'
 
@@ -16,10 +15,9 @@ function Dashboard(props) {
     return (
         <div className="dashboard container">
             {currentSelectedMap}
-            <Row>
-                <Col sm={4}><RouteList routes={routes} /></Col>
-                <Col sm={8}><MyMap/></Col>
-            </Row>
+            <RouteList currentMap={selectedRoute} routes={routes} />
+            <MyMap />
+
         </div>
     )
 }

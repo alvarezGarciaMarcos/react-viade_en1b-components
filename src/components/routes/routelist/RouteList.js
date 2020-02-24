@@ -1,20 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import RouteSummary from "./../routesummary/RouteSummary";
-import ReactScrollableList from "react-scrollable-list";
+import './RouteList.css'
 
+const RouteList = React.memo(({ routes, onClick, currentMap }) => {
 
-export default function RouteList({ routes }, props) {
-  const summaries = routes.map(route => {
-    return {
-      id: route.id,
-      content: <RouteSummary route={route} key={route.id}></RouteSummary>
-    };
+  const summaries = routes.map((route, id) => {
+    return (currentMap) ? <RouteSummary id={route.id == currentMap.id ? 'active' : ''} onClickHandle={onClick} route={route}></RouteSummary>
+    : <RouteSummary onClickHandle={onClick} route={route}></RouteSummary>
   });
   return (
-    <ReactScrollableList
-      listItems={summaries}
-      heightOfItem={25}
-      maxItemsToRender={5}
-    />
+    <div id="routeList">
+      {summaries}
+    </div>
+    
   );
-}
+})
+
+export default RouteList
