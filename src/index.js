@@ -2,9 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
+import { ThemeContext, themes } from './components/Layout/ThemeContext/ThemeContext'
 
 ReactDOM.render(
-  <App />,
+  <ThemeContext.Provider value={themes.light}>
+    <App />
+  </ThemeContext.Provider>
+  ,
   document.getElementById('root')
 );
 

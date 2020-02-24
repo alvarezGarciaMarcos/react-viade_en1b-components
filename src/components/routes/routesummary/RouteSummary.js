@@ -1,23 +1,29 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
-import "./RouteSummary.css"
-import { useState } from 'react'
+import './RouteSummary.css'
 
-const  RouteSummary = React.memo((props) => {
-    
-    const [route, setRoute] = useState(props.route)
+const activeStyle = {
+    backgroundColor: 'red'
+  }
+  
+const RouteSummary = React.memo((props) => {
+    const {route} = props
+
     const handleClick = (e) => {
         e.preventDefault();
-        props.onClickHandle(route)   
+        props.onClickHandle(route)
     }
 
+
     return (
-        <Card onClick={handleClick}>
-            <Card.Body>
-                <Card.Title>{route.name}</Card.Title>
-                <Card.Subtitle>{route.author}</Card.Subtitle>
-            </Card.Body>
-        </Card>
+        (
+            <Card style={props.style} id={props.id} onClick={handleClick} >
+                <Card.Body>
+                    <Card.Title>{route.name}</Card.Title>
+                    <Card.Subtitle>{route.author}</Card.Subtitle>
+                </Card.Body>
+            </Card>
+        )
     )
 })
 

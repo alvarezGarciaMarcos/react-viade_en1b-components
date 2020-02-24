@@ -5,9 +5,6 @@ import MyNavBar from "./components/Layout/NavBar/NavBar";
 import MyProfile from "./components/user/profile/MyProfile";
 import Login from "./components/Layout/login/Login";
 import Dashboard from "./components/Dashboard/Dashboard";
-
-
-
 class App extends Component {
   state = {
     userLoggedIn: true
@@ -18,20 +15,24 @@ class App extends Component {
     ) : null;
 
     return (
+
       <BrowserRouter>
         <div className="App">
           {navBar}
-          <Switch>
-            <Route
-              exact
-              path="/"
-              render={props => <Login {...props} />}
-            ></Route>
-            <Route path="/profile" component={MyProfile}></Route>
-            <Route exact path="/dashboard" component={Dashboard}></Route>
-          </Switch>
+
+            <Switch>
+              <Route
+                exact
+                path="/"
+                render={props => <Login {...props} />}
+              ></Route>
+              <Route path="/profile" component={MyProfile}></Route>
+              <Route exact path="/dashboard" component={Dashboard}></Route>
+            </Switch>
         </div>
       </BrowserRouter>
+          
+
     );
   }
 }

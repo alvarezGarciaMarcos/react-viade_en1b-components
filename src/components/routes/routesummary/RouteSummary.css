@@ -1,3 +1,6 @@
 .card{
     cursor: pointer;
+    transition: all 200ms ease-in-out;
+    margin-top: 1em;
 }
+
