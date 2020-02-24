@@ -9,6 +9,17 @@
     position: relative;
 }
 
+button {
+    background-color: var(--color-primary) !important;
+    border-style: none !important;
+    transition: all 200ms ease-in-out;
+    opacity: .8;
+}
+
+button:hover{
+    opacity: 1;
+}
+
 .background-image{
     position: absolute;
     left: 0;

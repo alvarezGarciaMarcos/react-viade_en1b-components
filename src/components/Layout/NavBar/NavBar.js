@@ -1,23 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { BsPerson, BsArrowBarUp, BsMap } from "react-icons/bs";
 import {withRouter} from 'react-router-dom'
 import "./NavBar.css";
+import { ThemeContext } from "../ThemeContext/ThemeContext";
+import { useEffect } from "react";
 
 const MyNavBar = React.memo(props => {
-  const [actual, setActual] = useState('');
 
   const links = [
     { text: 'My routes', href: '/routes', icon: <BsMap className="icon"></BsMap> },
     { text: 'Upload route', href: '/routes/upload', icon: <BsArrowBarUp class="icon"></BsArrowBarUp> }
   ]
-  const handleClick = (e) => {
-    setActual(e.target.text)
-  }
+
+  const dropDownElements = [
+    {text: 'My Profile', href: '/profile'},
+    {text: 'Log Out', href: '/logout'},
+    
+  ]
 
   const getNavLinkClass = path => {
     return props.location.pathname === path ? 'nav-link active' : 'nav-link'
   }
+
 
 
   return (
@@ -27,9 +32,8 @@ const MyNavBar = React.memo(props => {
       <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
         <Nav className="justify-content-end" activeKey="/home">
           {links.map(link => {
-            console.log(link.text == actual)
             return (<span  >
-              <Nav.Link className={getNavLinkClass(link.href)} onSelect={handleClick}  href={link.href}>
+              <Nav.Link  className={getNavLinkClass(link.href)}  href={link.href}>
               {link.icon}
               {link.text}
           </Nav.Link>
@@ -37,10 +41,11 @@ const MyNavBar = React.memo(props => {
             )
           })}
 
-          <NavDropdown variant="secondary" drop="left" title={<BsPerson className="icon"></BsPerson>}>
-            <NavDropdown.Item href="/profile">My Profile</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="/logout">Log Out</NavDropdown.Item>
+          <NavDropdown  variant="secondary" drop="left" title={<BsPerson className="icon"></BsPerson>}>
+          {dropDownElements.map(element => {
+              return (<NavDropdown.Item href={element.href}>{element.text}</NavDropdown.Item>)
+            })}
+            
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>

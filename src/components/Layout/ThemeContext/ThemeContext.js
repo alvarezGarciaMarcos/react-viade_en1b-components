@@ -1,12 +1,27 @@
 import {createContext} from 'react'
 
 export const themes = {
-    light: {
-      secondary: 'white',
-      primary: '#008080'
+    green: {
+      "--color-secondary": 'white',
+      "--color-primary": '#008080'
+    },
+    purple: {
+      "--color-secondary": 'white',
+      "--color-primary": '#A875FF'
+    },
+    lightBlue: {
+      "--color-secondary": 'black',
+      "--color-primary": '#38F9FF'
+    },
+    lightGreen: {
+      "--color-secondary" : 'white',
+      "--color-primary" : '#07E892'
+    },
+    lightOrange: {
+      "--color-secondary" : 'white',
+      '--color-primary': '#E8684D'
     }
   }
-  
   
   export const ThemeContext = createContext(themes.light);
   
