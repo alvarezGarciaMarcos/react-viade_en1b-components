@@ -1,10 +1,13 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
+import {showRoute} from './../../../store/actions/routeActions'
+import { connect } from "react-redux";
 
-export default function RouteSummary(props) {
+
+function RouteSummary(props) {
     const {route} = props
     return (
-        <Card>
+        <Card onClick={() => props.showRoute(route)}>
             <Card.Body>
                 <Card.Title>{route.name}</Card.Title>
                 <Card.Subtitle>{route.author}</Card.Subtitle>
@@ -12,3 +15,17 @@ export default function RouteSummary(props) {
         </Card>
     )
 }
+
+const mapDispatchToProps = (dispatch) =>{
+    return {
+      showRoute: (route) => dispatch(showRoute(route))
+    }
+  }
+  
+  export default connect(null, mapDispatchToProps)(RouteSummary)
+  
+
+
+
+
+

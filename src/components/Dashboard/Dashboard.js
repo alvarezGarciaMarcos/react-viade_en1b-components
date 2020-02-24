@@ -20,7 +20,7 @@ function Dashboard(props) {
 
 const mapStateToProps = (state) =>{
     return {
-        routes : state.route.routes
+        routes : state.route.routes,
     }
 }
 
