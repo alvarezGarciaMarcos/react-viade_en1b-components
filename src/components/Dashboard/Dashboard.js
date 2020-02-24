@@ -6,10 +6,16 @@ import RouteList from '../routes/routelist/RouteList';
 import {connect} from 'react-redux'
 
 function Dashboard(props) {
-    //console.log(props)
     const {routes} = props
+    const {selectedRoute} = props
+    console.log(selectedRoute)
+    const currentSelectedMap = selectedRoute == null ? <div id='titleHolder'><h1>Routes List</h1></div> : (<div id='titleHolder'>
+    <h1>{selectedRoute.name}</h1> <p> by {selectedRoute.author}</p>
+</div>)
+
     return (
         <div className="dashboard container">
+            {currentSelectedMap}
             <Row>
                 <Col sm={4}><RouteList routes={routes} /></Col>
                 <Col sm={8}><MyMap/></Col>
@@ -21,6 +27,7 @@ function Dashboard(props) {
 const mapStateToProps = (state) =>{
     return {
         routes : state.route.routes,
+        selectedRoute : state.route.selectedRoute
     }
 }
 
