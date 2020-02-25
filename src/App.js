@@ -14,8 +14,8 @@ const App = (props) => {
   useEffect(() => {
     Object.keys(theme).map(key => {
       const value = theme[key]
-      document.documentElement.style.setProperty(key, value)
-      return
+      return document.documentElement.style.setProperty(key, value)
+      
     })
   })
   const navBar = userLoggedIn ? (
