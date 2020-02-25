@@ -5,7 +5,7 @@ import MyNavBar from "./components/Layout/NavBar/NavBar";
 import MyProfile from "./components/user/profile/MyProfile";
 import Login from "./components/Layout/login/Login";
 import Dashboard from "./components/Dashboard/Dashboard";
-import { ThemeContext, themes } from './components/Layout/themeContext/ThemeContext'
+import { ThemeContext } from './components/Layout/themeContext/ThemeContext'
 
 const App = (props) => {
 
@@ -15,6 +15,7 @@ const App = (props) => {
     Object.keys(theme).map(key => {
       const value = theme[key]
       document.documentElement.style.setProperty(key, value)
+      return
     })
   })
   const navBar = userLoggedIn ? (
