@@ -17,6 +17,7 @@ const App = (props) => {
       return document.documentElement.style.setProperty(key, value)
       
     })
+    return
   })
   const navBar = userLoggedIn ? (
     <MyNavBar brandName="Viade_en1b"></MyNavBar>
