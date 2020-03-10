@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d4165f85b650cb0cc38e6cda4466b491",
+    "revision": "8ea9232109ccfad86ddeb74e29b3332f",
     "url": "/react-viade_en1b-components/index.html"
   },
   {
-    "revision": "308b28e9e3f7d804840f",
+    "revision": "019d0ebc876bd9340736",
     "url": "/react-viade_en1b-components/static/css/main.cfb9e8e6.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-viade_en1b-components/static/js/2.adb06e5c.chunk.js.LICENSE"
   },
   {
-    "revision": "308b28e9e3f7d804840f",
-    "url": "/react-viade_en1b-components/static/js/main.02b5f155.chunk.js"
+    "revision": "019d0ebc876bd9340736",
+    "url": "/react-viade_en1b-components/static/js/main.96b208a4.chunk.js"
   },
   {
     "revision": "1df881966e55b19b7cd9",
