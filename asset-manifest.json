@@ -1,7 +1,23 @@
 {
-  "main.css": "static/css/main.0f6b1723.css",
-  "main.css.map": "static/css/main.0f6b1723.css.map",
-  "main.js": "static/js/main.c752202f.js",
-  "main.js.map": "static/js/main.c752202f.js.map",
-  "static/media/mountains.jpg": "static/media/mountains.c1d9c9be.jpg"
+  "files": {
+    "main.css": "/react-viade_en1b-components/static/css/main.cfb9e8e6.chunk.css",
+    "main.js": "/react-viade_en1b-components/static/js/main.4c412e6a.chunk.js",
+    "main.js.map": "/react-viade_en1b-components/static/js/main.4c412e6a.chunk.js.map",
+    "runtime-main.js": "/react-viade_en1b-components/static/js/runtime-main.1819e98e.js",
+    "runtime-main.js.map": "/react-viade_en1b-components/static/js/runtime-main.1819e98e.js.map",
+    "static/js/2.5e6d63dd.chunk.js": "/react-viade_en1b-components/static/js/2.5e6d63dd.chunk.js",
+    "static/js/2.5e6d63dd.chunk.js.map": "/react-viade_en1b-components/static/js/2.5e6d63dd.chunk.js.map",
+    "index.html": "/react-viade_en1b-components/index.html",
+    "precache-manifest.349bf4343f03eb4abcc9a3ae9d85200d.js": "/react-viade_en1b-components/precache-manifest.349bf4343f03eb4abcc9a3ae9d85200d.js",
+    "service-worker.js": "/react-viade_en1b-components/service-worker.js",
+    "static/css/main.cfb9e8e6.chunk.css.map": "/react-viade_en1b-components/static/css/main.cfb9e8e6.chunk.css.map",
+    "static/js/2.5e6d63dd.chunk.js.LICENSE": "/react-viade_en1b-components/static/js/2.5e6d63dd.chunk.js.LICENSE",
+    "static/media/Login.css": "/react-viade_en1b-components/static/media/mountains.c1d9c9be.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1819e98e.js",
+    "static/js/2.5e6d63dd.chunk.js",
+    "static/css/main.cfb9e8e6.chunk.css",
+    "static/js/main.4c412e6a.chunk.js"
+  ]
 }
